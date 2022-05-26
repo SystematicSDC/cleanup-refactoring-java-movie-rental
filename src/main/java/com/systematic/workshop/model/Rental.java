@@ -1,23 +1,24 @@
 package com.systematic.workshop.model;
 
+import com.systematic.workshop.model.type.Movie;
+
 /**
  * The rental class represents a customer renting a movie.
  */
 public class Rental {
-
-    private Movie _movie;
-    private int _daysRented;
+    private Movie movie;
+    private int daysRented;
 
     public Rental(Movie movie, int daysRented) {
-        _movie = movie;
-        _daysRented = daysRented;
+        this.movie = movie;
+        this.daysRented = daysRented;
     }
 
     public int getDaysRented() {
-        return _daysRented;
+        return daysRented;
     }
 
     public Movie getMovie() {
-        return _movie;
+        return movie;
     }
 }
